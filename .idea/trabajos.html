@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación</title>
+
+    <link rel="stylesheet" href="global.css?v=3.0">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+
+    <a href="Informacion.html">Cambios y conexiones</a>
+    <a href="negocios.html">Cambios en negocios</a>
+    <a href="trabajos.html">Evaluación y conclusión</a>
+</nav>
+
+<!-- SECCIÓN Cajas horizontales  -->
+<section class="contenedor-scroll" style="opacity: 1; transform: scale(1);">
+
+    <div class="bloque-contenido-completo">
+        <h2 class="titulo-seccion-cajas">Conclusiones del Proyecto</h2>
+        <p class="subtitulo-seccion-cajas">El cierre de nuestra investigación sobre el impacto de las Tecnologías Web en la Sociedad y los Negocios.</p>
+
+        <!-- Contenedor principal para la fila horizontal -->
+        <div class="fila-conclusiones-horizontal">
+
+            <!-- CAJA 1 -->
+            <div class="caja-conclusion-unica">
+                <h3>Transformación</h3>
+                <p>Las tecnologías web transformaron por completo la estructura empresarial, trasladando los mercados físicos a un entorno mundial impulsado por datos. La consolidación del comercio electrónico eliminó las fronteras geográficas y los intermediarios, mientras que las herramientas de analítica avanzada y la infraestructura en la nube permitieron a las organizaciones automatizar sus operaciones y tomar decisiones estratégicas en tiempo real.</p>
+            </div>
+
+            <!-- CAJA 2 -->
+            <div class="caja-conclusion-unica">
+                <h3>Conectividad</h3>
+                <p>La red descentralizó el acceso a la información y a la comunicación, conectando a la humanidad en una infraestructura social omnipresente. El conocimiento se democratizó y se abrieron dinámicas esenciales como el teletrabajo, la educación virtual y las comunidades en línea, pero también se abrió la brecha de un desafío ético de mitigar la brecha digital y la polarización informativa.</p>
+            </div>
+
+            <!-- CAJA 3 -->
+            <div class="caja-conclusion-unica">
+                <h3>El Futuro</h3>
+                <p>La web está evolucionando hacia entornos inteligentes, predictivos y tridimensionales, impulsados por la inteligencia artificial avanzada. El futuro de la sociedad y de las empresas dependerá de la capacidad que tengamos para equilibrar la automatización total, la seguridad digital, la protección de los datos y una reconversión laboral equitativa que garantice un desarrollo inclusivo y sostenible.</p>
+            </div>
+
+        </div>
+
+        <!-- CONTENEDOR DE VIDEOS EN FILA HORIZONTAL -->
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <div>
+                <h3>Cambios en la humanidad</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Oy-mNj3uSAM?si=AmPgCVRw7wTDDI-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3>Cambios en las empresas</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DeVcWDzpq2c?si=Vvp6QWGQNvMYbRzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SECCIÓN 2: Formulario de Evaluación Llamativo -->
+<section class="seccion-formulario">
+    <div class="tarjeta-formulario">
+        <h2>Panel de Evaluación</h2>
+        <p class="Sub-form">Gracias por Evaluar mi trabajo.</p>
+
+        <form action="#" method="POST">
+            <!-- Pregunta 1: Texto -->
+            <div class="grupo-input">
+                <label for="nombre">Nombre del Evaluador:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Dra. María González" required>
+                <label for="nombre">Correo del evaluador:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="bjintriago1@utpl.edu.ec" required>
+
+            </div>
+
+            <!-- Pregunta 2: Selección (Desplegable) -->
+            <div class="grupo-input">
+                <label for="nota">¿Qué nota le asigna a la presentación?</label>
+                <select id="nota" name="nota" required>
+                    <option value="" disabled selected>Seleccione una calificación...</option>
+                    <option value="excelente">Excelente (10/10)</option>
+                    <option value="muy-bueno">Muy Bueno (8-9/10)</option>
+                    <option value="bueno">Bueno (7/10)</option>
+                    <option value="regular">Puede mejorar</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 3: Radio Buttons llamativos -->
+            <div class="grupo-input">
+                <label>¿Le gustó la interfaz visual y las animaciones?</label>
+                <div class="opciones-radio">
+                    <label><input type="radio" name="gusto" value="si" required> Me encantó, muy moderno</label>
+                    <label><input type="radio" name="gusto" value="regular"> Estuvo bien</label>
+                    <label><input type="radio" name="gusto" value="no"> Muy cargado</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 4: Caja de texto grande -->
+            <div class="grupo-input">
+                <label for="comentarios">Comentarios, sugerencias o aspectos a mejorar:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escriba aquí sus observaciones sobre el código o el diseño..."></textarea>
+            </div>
+
+            <!-- Botón de envío Neón -->
+            <button type="submit" class="boton-neon-enviar">Enviar Evaluación</button>
+        </form>
+    </div>
+</section>
+<script>
+    const formulario = document.querySelector('form');
+
+    if (formulario) {
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se refresque solo
+
+            // 1. Creamos el contenedor que cubrirá toda la pantalla
+            const pantallaGracias = document.createElement('div');
+            pantallaGracias.className = 'pantalla-agradecimiento-pantalla';
+
+            // 2. Metemos el mensaje, el check y un NUEVO BOTÓN DE CIERRE abajo
+            pantallaGracias.innerHTML = `
+                <div class="caja-gracias-animada">
+                    <div class="icono-check">✓</div>
+                    <h2>¡Gracias!</h2>
+                    <p>Espero haber cumplido las expectativas</p>
+
+                    <!-- Botón interactivo para poder salir del mensaje -->
+                    <button type="button" class="boton-cerrar-pantalla" id="btnCerrarGracias">Entendido</button>
+                </div>
+            `;
+
+            // 3. Lo inyectamos en el cuerpo de la página
+            document.body.appendChild(pantallaGracias);
+
+            // 4. EL TRUCO PARA SALIR: Buscamos el nuevo botón y le damos la orden de borrarse
+            const botonCerrar = pantallaGracias.querySelector('#btnCerrarGracias');
+            if (botonCerrar) {
+                botonCerrar.addEventListener('click', function() {
+                    pantallaGracias.remove(); // Desmonta y borra la cortina de la pantalla al instante
+                });
+            }
+        });
+    }
+</script>
+
+<footer style="background-color: transparent; padding: 40px 0; text-align: center;">
+    <p style="color: #64748b; font-family: sans-serif; margin: 0;">Página de Evaluación Final — Tecnología Web</p>
+</footer>
+
+
+
+</body>
+</html>

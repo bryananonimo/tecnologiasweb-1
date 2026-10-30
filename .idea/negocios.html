@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto en Negocios</title>
+    <!-- Tu archivo CSS futurista -->
+    <link rel="stylesheet" href="global.css?v=3.0">
+</head>
+<body class="body-negocios">
+<nav>
+    <a href="index.html">Inicio</a>
+
+    <a href="Informacion.html">Cambios y conexiones</a>
+    <a href="negocios.html">Cambios en negocios</a>
+    <a href="trabajos.html">Evaluación y conclusión</a>
+</nav>
+
+<!-- PRIMERA SECCIÓN: Cambios en Negocios (3 Textos organizados en su caja) -->
+<section class="oscuro-scroll" data-limite="400">
+    <!-- Contenedor de la imagen -->
+    <div class="oscuro-imagen">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzPn562FgYhdXsld8cPzdS8E3Syp817zI46MOJ5NWJTjY1hVfz09tLWs&s=10" alt="Tecnología Web">
+    </div>
+
+    <!-- Contenedor del texto (Caja cyberpunk con relieve) -->
+    <div class="oscuro-tarjeta-relieve">
+        <h2>Cambios en Negocios</h2>
+        <p><strong>Las tecnologías web trasladaron la infraestructura física de las empresas a entornos compartidos, dinámicos y eficientes.</strong></p>
+
+        <!-- Textos clave ordenadamente dentro de la lista de la caja -->
+        <ul>
+            <li>
+                <strong>SaaS y computación en la nube:</strong> Las compañías logran una reducción significativa de sus costos fijos al reemplazar costosos servidores locales por soluciones de Software como Servicio (SaaS). Esto permite agrupar la información y coordinar operaciones globales de forma remota.
+            </li>
+            <li>
+                <strong>Automatización del flujo de trabajo:</strong> La integración de plataformas web elimina los trabajos manuales repetitivos. Esto permite optimizar los tiempos de entrega, disminuye el margen de error humano y eleva la productividad general de la plantilla.
+            </li>
+        </ul>
+
+        <h2 style="font-size: 1.5rem; margin-top: 25px; color: #ffffff;">Toma de Decisiones Basada en Datos (Business Intelligence)</h2>
+        <p>La web cambió la planificación estratégica, ya que dejó de lado suposiciones e intuiciones por métricas exactas.</p>
+
+        <ul>
+            <li>
+                <strong>Analítica en tiempo real:</strong> Los directores pueden hacer uso de paneles de control web para monitorear los indicadores clave de rendimiento (KPIs) al instante, reaccionando de forma rápida ante las fluctuaciones del mercado.
+            </li>
+            <li>
+                <strong>Análisis predictivo:</strong> La constante recopilación de datos web mediante herramientas de Big Data e Inteligencia Artificial ayuda a anticipar el comportamiento de compra del consumidor y optimizar los niveles de inventario antes de que se produzca una crisis de stock.
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- SEGUNDA SECCIÓN -->
+<section class="oscuro-scroll seccion-invertida-oscura" data-limite="800">
+    <!-- El texto va primero para que quede a la izquierda -->
+    <div class="oscuro-tarjeta-relieve">
+        <h2>Transformación del Marketing y Relación con el Cliente</h2>
+
+        <!-- Textos clave dentro de la caja -->
+        <ul>
+            <li>
+                <strong>Desintermediación y Canales Directos (D2C):</strong> Los fabricantes venden directamente al cliente final mediante tiendas en línea y aplicaciones web, lo cual reduce los costos operativos de distribución y eleva sus márgenes de ganancia.
+            </li>
+            <li>
+                <strong>Omnicanalidad y experiencia de cliente:</strong> Las herramientas web permiten atender de forma unificada al usuario en múltiples puntos de contacto (sitio web, redes sociales, correo electrónico) y automatizar respuestas 24/7 con asistentes virtuales.
+            </li>
+        </ul>
+
+        <h2 style="font-size: 1.5rem; margin-top: 25px; color: #ffffff;">Nuevos Desafíos Corporativos</h2>
+        <p>La documentación no está completa si no se analizan los riesgos operacionales que traen consigo estas tecnologías.</p>
+
+        <ul>
+            <li>
+                <strong>Obligatorio de Seguridad en la Información:</strong> Al trasladar operaciones esenciales al entorno web, las empresas quedan expuestas al riesgo de ciberataques, robo de información o extorsiones, por lo que resulta indispensable destinar recursos prioritarios a la encriptación y a la implementación de mecanismos de protección.
+            </li>
+            <li>
+                <strong>Gestión del Cambio y Formación:</strong> La evolución constante de las interfaces y herramientas web exige que las empresas pongan en marcha programas de entrenamiento continuo para sus empleados, combatiendo así la resistencia interna al cambio tecnológico.
+            </li>
+        </ul>
+    </div>
+
+    <!-- La imagen va después para que quede a la derecha -->
+    <div class="oscuro-imagen">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmB6flUjBu0o7aOuXqPERlr-lj3v8ePkuMYn4qeqhFzOp2NoFdk_g79F8&s=10" alt="Impacto comercial">
+    </div>
+</section>
+
+
+<!-- Espacio extra abajo para simular scroll continuo -->
+<footer style="padding: 30px 0; text-align: center; color: #64748b; font-family: sans-serif;">
+    <p>Autor: Bryan Intriago</p>
+</footer>
+
+<!-- SCRIPT DE INTERSECTION OBSERVER (Zoom tridimensional y opacidad) -->
+<script>
+    const opciones = {
+        root: null,
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100)
+    };
+
+    const observador = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const rect = entry.boundingClientRect;
+
+            if (rect.top < window.innerHeight / 2) {
+                let porcentajeVisible = entry.intersectionRatio;
+
+                if (porcentajeVisible < 0.25) porcentajeVisible = 0.25;
+                entry.target.style.opacity = porcentajeVisible;
+
+                const escala = 0.93 + (entry.intersectionRatio * 0.07);
+                const elevacion = (1 - entry.intersectionRatio) * -20;
+
+                entry.target.style.transform = `scale(${escala}) translateY(${elevacion}px)`;
+            } else {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'scale(1) translateY(0px)';
+            }
+        });
+    }, opciones);
+
+    document.querySelectorAll('.contenedor-scroll').forEach(seccion => {
+        observador.observe(seccion);
+    });
+</script>
+</body>
+</html>
