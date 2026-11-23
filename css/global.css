@@ -1,0 +1,615 @@
+/* ==========================================================================
+   ESTILOS GLOBALES Y MENÚ DE NAVEGACIÓN
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fdfbf7;
+    color: #1e293b;
+}
+
+nav {
+    background-color: #000000 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    padding: 15px 10px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    width: 100% !important;
+}
+
+nav a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+nav a:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(-2px) !important;
+}
+
+.encabezado-pagina {
+    text-align: center;
+    padding: 40px 20px 15px 20px;
+}
+
+.encabezado-pagina h1 {
+    font-size: 2.3rem;
+    letter-spacing: -0.5px;
+    color: #0f172a;
+}
+
+/* ==========================================================================
+   PÁGINA DE INICIO (index.html)
+   ========================================================================== */
+.body-index {
+    background-color: #fdfbf7 !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    color: #1e293b;
+}
+
+.body-index .contenedor-scroll {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    padding: 30px 10% !important;
+    background-color: #ffffff !important;
+    min-height: auto !important;
+    transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: opacity, transform;
+}
+
+.body-index .bloque-imagen {
+    flex: 1 !important;
+    width: 100% !important;
+    max-width: 500px !important;
+}
+
+.body-index .bloque-imagen img {
+    width: 100% !important;
+    height: 320px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.body-index .bloque-texto {
+    flex: 1 !important;
+    font-family: sans-serif !important;
+    color: #1e293b !important;
+    line-height: 1.6 !important;
+}
+
+.body-index .bloque-texto h2 {
+    font-size: 1.85rem !important;
+    margin-bottom: 15px !important;
+    color: #0f172a;
+}
+
+.lista-hitos {
+    margin-top: 15px;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.lista-hitos li {
+    margin-bottom: 10px;
+}
+
+.body-index .tarjeta-relieve {
+    background-color: #ffffff !important;
+    padding: 25px 30px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.body-index .tarjeta-relieve:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Tabla HTML Semántica (index.html) */
+.seccion-tabla {
+    width: 80%;
+    max-width: 1100px;
+    margin: 40px auto 30px auto;
+    overflow-x: auto;
+}
+
+.seccion-tabla h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+    text-align: center;
+}
+
+.seccion-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.96rem;
+    text-align: left;
+}
+
+.seccion-tabla th,
+.seccion-tabla td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.seccion-tabla thead th {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.seccion-tabla tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.seccion-tabla tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+@media (max-width: 768px) {
+    .body-index .contenedor-scroll {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+    }
+    .body-index .seccion-invertida {
+        flex-direction: column-reverse !important;
+    }
+}
+
+/* ==========================================================================
+   PÁGINA CAMBIOS Y CONEXIONES (Informacion.html)
+   ========================================================================== */
+.body-conexiones {
+    background-color: #fdfbf7 !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    color: #1e293b;
+}
+
+.bloque-principal-novedoso {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: block;
+}
+
+.encabezado-llamativo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.encabezado-llamativo h1 {
+    color: #0f172a;
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.encabezado-llamativo p {
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contenedor-tarjetas-gemelas {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 35px !important;
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.tarjeta-novedosa {
+    flex: 1 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.tarjeta-novedosa:hover {
+    transform: translateY(-6px) !important;
+    border-color: #0284c7 !important;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+.contenedor-imagen-interna {
+    width: 100% !important;
+    height: 230px !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.contenedor-imagen-interna img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.5s ease !important;
+}
+
+.tarjeta-novedosa:hover .contenedor-imagen-interna img {
+    transform: scale(1.04) !important;
+}
+
+.contenido-texto-tarjeta {
+    padding: 30px !important;
+    text-align: left !important;
+}
+
+.contenido-texto-tarjeta h2 {
+    color: #0f172a !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 15px !important;
+}
+
+.contenido-texto-tarjeta p {
+    color: #475569 !important;
+    line-height: 1.7 !important;
+    font-size: 0.98rem !important;
+    margin-bottom: 15px !important;
+}
+
+.contenido-texto-tarjeta p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.contenido-texto-tarjeta p strong {
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+}
+
+.pie-pagina-compacto {
+    text-align: center !important;
+    padding: 40px 0 25px 0 !important;
+    color: #64748b !important;
+    font-size: 0.95rem !important;
+}
+
+@media (max-width: 850px) {
+    .contenedor-tarjetas-gemelas {
+        flex-direction: column !important;
+        gap: 25px !important;
+    }
+}
+
+/* ==========================================================================
+   PÁGINA CAMBIOS EN NEGOCIOS (negocios.html - Tema Oscuro Tecnológico)
+   ========================================================================== */
+.body-negocios {
+    background-color: #0b1120 !important;
+    color: #e2e8f0 !important;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.body-negocios .encabezado-pagina h1 {
+    color: #38bdf8;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+}
+
+.oscuro-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 10%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.oscuro-imagen {
+    flex: 1;
+    max-width: 480px;
+}
+
+.oscuro-imagen img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.oscuro-tarjeta-relieve {
+    flex: 1.2;
+    background: linear-gradient(145deg, #111827, #1e293b);
+    padding: 30px 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+    line-height: 1.7;
+}
+
+.oscuro-tarjeta-relieve h2 {
+    color: #38bdf8;
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+}
+
+.subtitulo-tarjeta {
+    font-size: 1.35rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.oscuro-tarjeta-relieve p {
+    color: #cbd5e1;
+    margin-bottom: 14px;
+}
+
+.oscuro-tarjeta-relieve ul {
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+.oscuro-tarjeta-relieve li {
+    margin-bottom: 12px;
+}
+
+.oscuro-tarjeta-relieve strong {
+    color: #7dd3fc;
+}
+
+.pie-pagina-negocios {
+    padding: 35px 0;
+    text-align: center;
+    color: #94a3b8;
+}
+
+@media (max-width: 850px) {
+    .oscuro-scroll {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .seccion-invertida-oscura {
+        flex-direction: column-reverse;
+    }
+}
+
+/* ==========================================================================
+   PÁGINA CONCLUSIONES Y CONTACTO (trabajos.html)
+   ========================================================================== */
+.seccion-conclusiones {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 50px auto;
+}
+
+.titulo-seccion-cajas {
+    text-align: center;
+    font-size: 1.9rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.subtitulo-seccion-cajas {
+    text-align: center;
+    color: #64748b;
+font-size: 1.05rem;
+margin-bottom: 35px;
+}
+.fila-conclusiones-horizontal {
+display: flex;
+gap: 25px;
+justify-content: space-between;
+align-items: stretch;
+}
+.caja-conclusion-unica {
+flex: 1;
+background-color: #ffffff;
+border: 1px solid #e2e8f0;
+border-radius: 16px;
+padding: 28px;
+box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.caja-conclusion-unica:hover {
+transform: translateY(-5px);
+box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
+}
+.caja-conclusion-unica h3 {
+color: #0284c7;
+font-size: 1.35rem;
+margin-bottom: 12px;
+}
+.caja-conclusion-unica p {
+color: #475569;
+line-height: 1.7;
+font-size: 0.96rem;
+}
+.contenedor-videos {
+display: flex;
+gap: 24px;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.bloque-video h3 {
+margin-bottom: 12px;
+text-align: center;
+color: #0f172a;
+}
+.bloque-video iframe {
+border: none;
+border-radius: 12px;
+max-width: 100%;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+/* Formulario de Contacto */
+.seccion-formulario {
+width: 90%;
+max-width: 720px;
+margin: 30px auto 50px auto;
+}
+.tarjeta-formulario {
+background-color: #0f172a;
+color: #f8fafc;
+padding: 38px 40px;
+border-radius: 20px;
+box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2);
+border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.tarjeta-formulario h2 {
+text-align: center;
+font-size: 1.9rem;
+color: #38bdf8;
+margin-bottom: 8px;
+}
+.Sub-form {
+text-align: center;
+color: #94a3b8;
+margin-bottom: 28px;
+font-size: 0.98rem;
+}
+.grupo-input {
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+}
+.grupo-input label {
+font-weight: 600;
+margin-bottom: 8px;
+color: #e2e8f0;
+font-size: 0.95rem;
+}
+.grupo-input input,
+.grupo-input select,
+.grupo-input textarea {
+padding: 12px 15px;
+border-radius: 10px;
+border: 1px solid #334155;
+background-color: #1e293b;
+color: #ffffff;
+font-family: inherit;
+font-size: 0.96rem;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.grupo-input input:focus,
+.grupo-input select:focus,
+.grupo-input textarea:focus {
+outline: none;
+border-color: #38bdf8;
+box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+.boton-neon-enviar {
+width: 100%;
+padding: 14px;
+background: linear-gradient(135deg, #0284c7, #38bdf8);
+color: #0f172a;
+font-weight: 700;
+font-size: 1.05rem;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.boton-neon-enviar:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 25px rgba(56, 189, 248, 0.45);
+}
+/* Modal de Confirmación de Envío */
+.pantalla-agradecimiento-pantalla {
+position: fixed;
+inset: 0;
+background-color: rgba(15, 23, 42, 0.85);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10000;
+padding: 20px;
+}
+.caja-gracias-animada {
+background-color: #1e293b;
+color: #ffffff;
+padding: 40px 35px;
+border-radius: 20px;
+text-align: center;
+max-width: 420px;
+width: 100%;
+border: 1px solid #38bdf8;
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+.icono-check {
+width: 64px;
+height: 64px;
+margin: 0 auto 18px auto;
+background-color: #10b981;
+color: #ffffff;
+font-size: 2rem;
+font-weight: bold;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.caja-gracias-animada h2 {
+color: #38bdf8;
+margin-bottom: 10px;
+}
+.caja-gracias-animada p {
+color: #cbd5e1;
+margin-bottom: 24px;
+line-height: 1.5;
+}
+.boton-cerrar-pantalla {
+padding: 10px 26px;
+background-color: #38bdf8;
+color: #0f172a;
+border: none;
+border-radius: 8px;
+font-weight: 700;
+cursor: pointer;
+font-size: 0.96rem;
+}
+.boton-cerrar-pantalla:hover {
+background-color: #7dd3fc;
+}
+.pie-pagina {
+background-color: transparent;
+padding: 40px 0 30px 0;
+text-align: center;
+color: #64748b;
+}
+@media (max-width: 850px) {
+.fila-conclusiones-horizontal {
+flex-direction: column;
+}
+.tarjeta-formulario {
+padding: 28px 22px;
+}
+}
